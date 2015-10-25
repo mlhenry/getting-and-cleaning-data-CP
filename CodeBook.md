@@ -41,6 +41,17 @@ Libraries used:
 
 ###Cleaning of the data
 The cleaning script combines multiple raw files such as test and training sets, subsets data of interest (mean, etc), and applies proper labels. The reshape2 package is used to create both long and wide forms of the data.
+- Read tables from test and training files and bind them (observations are X, Activities are Y)
+- Add feature data to the new trimed dset
+- Trim the new super set to only include measures of interest as in item 2 above
+- Get activity labels and rename columns for later use
+- Combine the activities for Y, test and training
+- Rename the first column of the activities to match ActLab, then join them by common column
+- Bind these to the trimed dset
+- Get subject info -- read, bind, etc
+- Order the trimmed binded dset
+- Use reshape2 package to make dset long form, then wide form which addresses means for Item 5.
+- Lastly, put this into the required format using write.table where row.names is set to FALSE.
 
 ##Description of the variables in the tiny_data.txt file
 General description of the file including:
