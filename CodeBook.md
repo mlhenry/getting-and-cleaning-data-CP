@@ -34,9 +34,9 @@ Libraries used:
 - reshape2
 
 ###Guide to create the tidy data file
-1. Download and unzip the data in your working directory
+1. Download and unzip the data in your working directory. The script expects the unzipped folder "UCI HAR Dataset" to be in folder "Class Project" that sits in your working directory. You must change these in order to run the script on your local.
 2. Check that you have the required libraries 
-3. Modify path variables to match those of your local
+3. Modify path variables to match those of your local (as explained in item 1 here).
 4. Run the script in R to produce: wideTidy.csv, longTidy.csv, and wideTidy-table.txt (for submission).
 
 ###Cleaning of the data
